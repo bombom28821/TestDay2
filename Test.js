@@ -18,10 +18,10 @@ const express = require('express');
 
 const app = express()
 
-app.get('/index.html',(req,res)=>{
+app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/index.html');
 })
-app.get('/huy.html',(req,res)=>{
+app.get('/huy',(req,res)=>{
     res.sendFile(__dirname + '/huy.html');
 })
 
